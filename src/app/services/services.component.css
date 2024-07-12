@@ -1,0 +1,43 @@
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .service {
+    margin-bottom: 40px;
+  }
+  
+  .service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .service-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .service-description {
+    max-width: 45%;
+  }
+  
+  .service h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .service p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+  }
+  

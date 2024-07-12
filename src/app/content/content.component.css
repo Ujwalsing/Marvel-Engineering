@@ -1,0 +1,80 @@
+/* Global font family */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .image-container, .text-container {
+    flex: 1;
+    min-width: 300px; /* Ensures responsiveness on smaller screens */
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Alternate row styles */
+  .content-container:nth-child(odd) {
+    flex-direction: row;
+  }
+  
+  .content-container:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  /* Additional styles for text container */
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .text-container h2 {
+    margin-top: 0;
+  }
+  
+  /* Card styles for <p> elements */
+  .text-container p {
+    background: #c3c3c3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    width: 100%; /* Full width */
+    max-width: 600px; /* Limit maximum width */
+    min-height: 400px; /* Minimum height */
+    display: flex;
+    align-items: center; /* Center text vertically */
+  }
+  .font{
+    font-size: large;
+  }
+  .heading{
+    font-weight: bold;
+    padding-left: 100px;
+  }
+  .heading-us{
+    font-weight: bold;
+    padding-left: 240px;
+  }
+  
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column !important;
+    }
+    
+    .image-container {
+      margin-bottom: 10px;
+    }
+  }
+
+  
